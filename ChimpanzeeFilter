@@ -1,0 +1,196 @@
+###ChimpanzeeFilter###
+
+Show
+Class "Quest"
+SetTextColor 150 0 150
+
+###Red vorbs are best vorbs###
+Show
+BaseType "Vaal Orb"
+SetTextColor 125 0 0
+
+###Jewels have Special Coloration###
+Show
+Class "Jewel"
+Rarity "Magic"
+SetBorderColor 225 100 200
+SetBackgroundColor 0 15 45
+PlayAlertSound 6
+Show
+Class "Jewel"
+Rarity "Rare"
+SetBorderColor 255 70 0
+SetBackgroundColor 30 30 0
+PlayAlertSound 6
+Show
+Class "Jewel"
+Rarity "Unique"
+SetTextColor 150 75 0
+SetBorderColor 255 100 0
+SetBackgroundColor 40 20 0
+PlayAlertSound 6
+
+###Special coloration for certain high currency###
+Show
+BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Scroll Fragment"
+SetBorderColor 160 140 100
+
+###Fishing rods deserve special treatment###
+Show
+BaseType "Fishing Rod" "Alteration Shard"
+SetBorderColor 160 60 150
+SetTextColor 160 60 150
+SetBackgroundColor 60 10 55
+
+###So do mirrors###
+Show
+BaseType "Mirror of Kalandra" "Transmutation Shard"
+SetTextColor 40 200 150
+SetBackgroundColor 0 0 150
+SetBorderColor 255 255 255
+PlayAlertSound 1
+
+###Showing maps in green. Higher rarity maps shine brighter###
+Show
+Class "Maps"
+Rarity "Normal"
+SetTextColor 0 100 0
+SetBorderColor 0 100 0
+Show
+Class "Maps"
+Rarity "Magic"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+Show
+Class "Maps"
+Rarity "Rare"
+SetTextColor 0 200 0
+SetBorderColor 0 200 0
+Show
+Class "Maps"
+Rarity "Unique"
+SetTextColor 150 75 0
+SetBorderColor 150 75 0
+
+###Jewellery for the Chaos and Regal recipe###
+Show
+Rarity "Rare"
+Class "Amulet" "Ring" "Belt"
+ItemLevel > 59
+ItemLevel < 75
+SetBorderColor 200 159 100
+Show
+Rarity "Rare"
+Class "Amulet" "Ring" "Belt"
+ItemLevel > 74
+SetBorderColor 255 200 100
+SetBackgroundColor 50 50 0
+
+###Quality Assurance###
+Show
+Class "Flasks"
+Rarity "Normal"
+Quality > 0
+SetBorderColor 150 150 150
+Show
+Class "Flasks"
+Rarity "Magic"
+Quality > 0
+SetBorderColor 50 60 170
+Show
+Class "Gems"
+Quality > 0
+SetBackgroundColor 0 70 50
+SetBorderColor 50 255 200
+Show
+Quality = 20
+SetBackgroundColor 140 100 0
+
+###Chisel recipe hammers###
+Show
+BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+Rarity "Normal"
+PlayAlertSound 8
+SetBorderColor 150 150 150
+Show
+BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+Rarity "Magic"
+PlayAlertSound 8
+SetBorderColor 50 60 170
+Show
+BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+Rarity "Rare"
+PlayAlertSound 8
+SetBorderColor 255 160 0
+
+###Showing all items from certain wanted classes###
+Show
+Class "Flasks"
+Show
+Class "Currency"
+Show
+Class "Gems"
+Show
+Class "Map Fragments"
+
+###RGB Socket Group and Six Sockets###
+Show
+SocketGroup RGB
+SetBorderColor 0 0 255
+Show
+Sockets = 6
+SetBorderColor 70 80 100
+
+###Items with 4 or more linked sockets###
+Show
+Rarity "Normal"
+LinkedSockets = 4
+SetBackgroundColor 30 30 30
+Show
+Rarity "Magic"
+LinkedSockets = 4
+SetBackgroundColor 0 30 70
+Show
+Rarity "Rare"
+LinkedSockets = 4
+SetBackgroundColor 30 30 10
+Show
+Rarity "Normal"
+LinkedSockets = 5
+SetBackgroundColor 60 60 60
+PlayAlertSound 1
+Show
+Rarity "Magic"
+LinkedSockets = 5
+SetBackgroundColor 10 50 100
+PlayAlertSound 1
+Show
+Rarity "Rare"
+LinkedSockets = 5
+SetBackgroundColor 50 50 15
+PlayAlertSound 1
+Show
+Rarity "Normal"
+LinkedSockets = 6
+SetBackgroundColor 100 100 100
+PlayAlertSound 1
+Show
+Rarity "Magic"
+LinkedSockets = 6
+SetBackgroundColor 25 70 150
+PlayAlertSound 1
+Show
+Rarity "Rare"
+LinkedSockets = 6
+SetBackgroundColor 80 80 25
+PlayAlertSound 1
+
+###Showing Unique and Rare items be default###
+Show
+Rarity "Unique"
+SetTextColor 150 75 0
+Show
+Rarity "Rare"
+
+###The "Hide" command at the bottom hides everything not specified above###
+Hide
