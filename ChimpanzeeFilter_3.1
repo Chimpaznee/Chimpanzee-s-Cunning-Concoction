@@ -1,0 +1,751 @@
+###ChimpanzeeFilter###
+
+Show
+Class "Quest"
+SetTextColor 150 0 150
+
+###Items that are usually hidden are shown when you get started, in order to ease the early gearing###
+Show
+Rarity "Normal"
+DropLevel < 10
+ItemLevel < 10
+
+Show
+Rarity "Magic"
+DropLevel < 20
+ItemLevel < 20
+
+###Special coloration for certain high value gems###
+Show
+BaseType "Empower" "Enhance" "Enlighten" "Detonate Mines" "Portal"
+Class "Gems"
+SetTextColor 0 100 200
+SetBackgroundColor 0 20 70
+SetBorderColor 0 225 255
+SetFontSize 42
+PlayAlertSound 6 100
+Show
+BaseType "Multistrike" "Chain" "Greater Multiple Projectiles" "Spell Echo" "Cast when Damage Taken" "Concentrated Effect" "Elemental Weakness" "Cast On Critical Strike"
+Class "Gems"
+SetTextColor 0 120 170
+SetBackgroundColor 0 30 40
+SetBorderColor 0 150 200
+SetFontSize 38
+PlayAlertSound 6 100
+
+###Red vaal loot###
+Show
+BaseType "Vaal Orb"
+SetTextColor 125 0 0
+Show
+Class "Gems"
+BaseType "Vaal"
+SetBackgroundColor 55 0 0 245
+
+###Jewels have Special Coloration###
+Show
+Class "Jewel"
+Rarity "Normal"
+SetBorderColor 100 120 140
+Show
+Class "Jewel"
+Rarity "Magic"
+SetBorderColor 225 100 200
+SetBackgroundColor 0 15 45
+PlayAlertSound 5 100
+Show
+Class "Jewel"
+Rarity "Rare"
+SetBorderColor 255 70 0
+SetBackgroundColor 30 30 0
+PlayAlertSound 5 100
+Show
+Class "Jewel"
+Rarity "Unique"
+SetTextColor 150 75 0
+SetBorderColor 255 100 0
+SetBackgroundColor 40 20 0
+PlayAlertSound 5 100
+
+###Special coloration for certain high currency###
+Show
+BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Scroll Fragment"
+SetTextColor 250 220 150
+SetBorderColor 250 220 150
+SetBackgroundColor 50 40 20
+SetFontSize 42
+PlayAlertSound 6 100
+
+###Fishing rods deserve special treatment###
+Show
+BaseType "Fishing Rod" "Alteration Shard"
+SetBorderColor 160 60 150
+SetTextColor 160 60 150
+SetBackgroundColor 60 10 55
+SetFontSize 42
+PlayAlertSound 5 100
+
+###So do mirrors###
+Show
+BaseType "Mirror of Kalandra" "Transmutation Shard"
+SetTextColor 40 200 150
+SetBackgroundColor 0 0 150
+SetBorderColor 255 255 255
+SetFontSize 42
+PlayAlertSound 1 100
+
+###Normal maps - Green. Magic maps - Torquise. Rare maps - Sky Blue. Maps have an opaque background. The higher the map level, the brighter the background, in the same color of the map's rarity###
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "62"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 0 0 255
+PlayAlertSound 6 44
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "69"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 30 0 255
+PlayAlertSound 6 48
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "70"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 35 0 255
+PlayAlertSound 6 52
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "71"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 40 0 255
+PlayAlertSound 6 56
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "72"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 44 0 255
+PlayAlertSound 6 60
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "73"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 48 0 255
+PlayAlertSound 6 64
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "74"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 52 0 255
+PlayAlertSound 6 68
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "75"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 56 0 255
+PlayAlertSound 6 72
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "76"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 60 0 255
+PlayAlertSound 6 76
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "77"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 64 0 255
+PlayAlertSound 6 80
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "78"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 68 0 255
+PlayAlertSound 6 84
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "79"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 72 0 255
+PlayAlertSound 6 88
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "80"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 76 0 255
+PlayAlertSound 6 92
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "81"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 80 0 255
+PlayAlertSound 6 96
+SetFontSize 35
+Show
+Class "Maps"
+Rarity "Normal"
+DropLevel "82"
+SetTextColor 0 150 0
+SetBorderColor 0 150 0
+SetBackgroundColor 0 86 0 255
+PlayAlertSound 6 100
+SetFontSize 35
+
+
+
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "62"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 0 0 255
+PlayAlertSound 6 44
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "69"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 30 30 255
+PlayAlertSound 6 48
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "70"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 36 36 255
+PlayAlertSound 6 52
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "71"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 40 40 255
+PlayAlertSound 6 56
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "72"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 44 44 255
+PlayAlertSound 6 60
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "73"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 48 48 255
+PlayAlertSound 6 64
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "74"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 52 52 255
+PlayAlertSound 6 68
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "75"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 56 56 255
+PlayAlertSound 6 72
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "76"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 60 60 255
+PlayAlertSound 6 76
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "77"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 64 64 255
+PlayAlertSound 6 80
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "78"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 68 68 255
+PlayAlertSound 6 84
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "79"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 72 72 255
+PlayAlertSound 6 88
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "80"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 76 76 255
+PlayAlertSound 6 92
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "81"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 80 80 255
+PlayAlertSound 6 96
+SetFontSize 36
+Show
+Class "Maps"
+Rarity "Magic"
+DropLevel "82"
+SetTextColor 0 150 150
+SetBorderColor 0 150 150
+SetBackgroundColor 0 86 86 255
+PlayAlertSound 6 100
+SetFontSize 36
+
+
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "62"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 0 0 255
+PlayAlertSound 6 44
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "69"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 20 40 255
+PlayAlertSound 6 48
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "70"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 25 50 255
+PlayAlertSound 6 52
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "71"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 28 56 255
+PlayAlertSound 6 56
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "72"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 31 62 255
+PlayAlertSound 6 60
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "73"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 35 70 255
+PlayAlertSound 6 64
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "74"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 40 80 255
+PlayAlertSound 6 68
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "75"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 44 88 255
+PlayAlertSound 6 72
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "76"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 48 96 255
+PlayAlertSound 6 76
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "77"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 51 102 255
+PlayAlertSound 6 80
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "78"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 54 108 255
+PlayAlertSound 6 84
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "79"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 57 114 255
+PlayAlertSound 6 88
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "80"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 60 120 255
+PlayAlertSound 6 92
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "81"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 63 126 255
+PlayAlertSound 6 96
+SetFontSize 37
+Show
+Class "Maps"
+Rarity "Rare"
+DropLevel "82"
+SetTextColor 0 125 250
+SetBorderColor 0 125 250
+SetBackgroundColor 0 70 150 255
+PlayAlertSound 6 100
+SetFontSize 37
+
+
+
+Show
+Class "Maps"
+Rarity "Unique"
+SetTextColor 150 75 0
+SetBorderColor 150 75 0
+SetFontSize 38
+
+###Jewellery for the Chaos and Regal recipe###
+Show
+Rarity "Rare"
+Class "Amulet" "Ring" "Belt"
+ItemLevel > 59
+ItemLevel < 75
+SetBorderColor 200 159 100
+Show
+Rarity "Rare"
+Class "Amulet" "Ring" "Belt"
+ItemLevel > 74
+SetBorderColor 255 200 100
+SetBackgroundColor 50 50 0
+
+###Quality Assurance###
+Show
+Class "Flasks"
+Rarity "Normal"
+Quality > 0
+SetBorderColor 150 150 150
+Show
+Class "Flasks"
+Rarity "Magic"
+Quality > 0
+SetBorderColor 50 60 170
+Show
+Class "Gems"
+Quality > 0
+SetBackgroundColor 0 52 38
+SetBorderColor 50 255 200
+Show
+Quality = 20
+SetBackgroundColor 140 100 0
+
+###Chisel recipe hammers###
+Show
+BaseType "Gavel"
+Rarity "Normal"
+PlayAlertSound 8 100
+SetBorderColor 150 150 150
+Show
+BaseType "Rock Breaker" "Stone Hammer"
+Rarity "Normal"
+SetBorderColor 150 150 150
+Show
+BaseType "Gavel"
+Rarity "Magic"
+PlayAlertSound 8 100
+SetBorderColor 50 60 170
+Show
+BaseType "Rock Breaker" "Stone Hammer"
+Rarity "Magic"
+SetBorderColor 50 60 170
+Show
+BaseType "Gavel"
+Rarity "Rare"
+PlayAlertSound 8 100
+SetBorderColor 255 160 0
+Show
+BaseType "Rock Breaker" "Stone Hammer"
+Rarity "Rare"
+SetBorderColor 255 160 0
+
+###RGB Socket Group and Six Sockets###
+Show
+Sockets = 6
+Rarity "Normal"
+SetBorderColor 70 80 100
+SetBackgroundColor 30 35 45
+Show
+Sockets = 6
+Rarity "Magic"
+SetBorderColor 70 80 100
+SetBackgroundColor 30 35 45
+Show
+Sockets = 6
+Rarity "Rare"
+SetBorderColor 160 170 50
+SetBackgroundColor 40 15 0
+Show
+SocketGroup RGB
+SetBorderColor 0 0 255
+
+###Items with 4 or more linked sockets. RGB socket groups on 4 linked items get a blue border###
+Show
+Rarity "Normal"
+LinkedSockets = 4
+SetBackgroundColor 40 40 40
+Show
+Rarity "Magic"
+LinkedSockets = 4
+SetBackgroundColor 0 30 70
+Show
+Rarity "Rare"
+LinkedSockets = 4
+SetBackgroundColor 40 40 10
+Show
+Rarity "Normal"
+LinkedSockets = 5
+SetBackgroundColor 70 70 70
+PlayAlertSound 2 100
+Show
+Rarity "Magic"
+LinkedSockets = 5
+SetBackgroundColor 10 50 100
+PlayAlertSound 2 100
+Show
+Rarity "Rare"
+LinkedSockets = 5
+SetBackgroundColor 60 60 15
+PlayAlertSound 2 100
+Show
+Rarity "Normal"
+LinkedSockets = 6
+SetBackgroundColor 100 100 100
+PlayAlertSound 1 100
+Show
+Rarity "Magic"
+LinkedSockets = 6
+SetBackgroundColor 25 70 150
+PlayAlertSound 1 100
+Show
+Rarity "Rare"
+LinkedSockets = 6
+SetBackgroundColor 80 80 25
+PlayAlertSound 1 100
+Show
+Rarity "Normal"
+SocketGroup RGB
+LinkedSockets = 4
+SetBorderColor 0 0 255
+SetBackgroundColor 40 40 40
+Show
+Rarity "Magic"
+SocketGroup RGB
+LinkedSockets = 4
+SetBorderColor 0 0 255
+SetBackgroundColor 0 30 70
+Show
+Rarity "Rare"
+SocketGroup RGB
+LinkedSockets = 4
+SetBorderColor 0 0 255
+SetBackgroundColor 40 40 10
+
+###Showing certain flasks until a certain level threshold###
+Show
+Class "Utility Flasks"
+Show
+Class "Flasks"
+BaseType "Small"
+ItemLevel < 10
+Show
+Class "Flasks"
+DropLevel = 3
+ItemLevel < 13
+Show
+Class "Flasks"
+DropLevel = 6
+ItemLevel < 17
+Show
+Class "Flasks"
+DropLevel = 10
+ItemLevel < 20
+Show
+Class "Flasks"
+DropLevel = 12
+ItemLevel < 22
+Show
+Class "Flasks"
+DropLevel = 18
+ItemLevel < 26
+Show
+Class "Flasks"
+DropLevel = 20
+ItemLevel < 30
+Show
+Class "Flasks"
+DropLevel = 24
+ItemLevel < 30
+Show
+Class "Flasks"
+DropLevel = 30
+ItemLevel < 36
+Show
+Class "Flasks"
+DropLevel = 36
+ItemLevel < 42
+Show
+Class "Flasks"
+DropLevel = 40
+ItemLevel < 60
+Show
+Class "Flasks"
+DropLevel = 42
+ItemLevel < 50
+Show
+Class "Flasks"
+DropLevel = 50
+ItemLevel < 60
+Show
+Class "Flasks"
+DropLevel = 60
+ItemLevel < 65
+Show
+Class "Flasks"
+DropLevel >= 65
+
+###Showing all items from certain wanted classes###
+Show
+Class "Currency"
+Show
+Class "Gems"
+Show
+Class "Map Fragments"
+
+###Showing Unique and Rare items be default###
+Show
+Rarity "Unique"
+SetTextColor 150 75 0
+SetFontSize 38
+Show
+Rarity "Rare"
+
+###"Hide" functions: Normal and magic "trash" loot has a small font###
+Hide
+Rarity "Normal"
+SetFontSize 25
+SetBackgroundColor 0 0 0 175
+Hide
+Rarity "Magic"
+SetFontSize 25
+SetBackgroundColor 0 0 0 175
+Hide
